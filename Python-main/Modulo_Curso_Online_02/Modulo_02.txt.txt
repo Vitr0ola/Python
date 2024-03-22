@@ -1,0 +1,19 @@
+Modulo 02 Estruturas Condicionais
+
+
+QUEBRANDO O FLUXO DE EXECUÇAO DO PROGRAMA
+
+
+
+if significa 'se' em ingles 
+
+#Lê dois valores inteiros e compara ambos
+x = int(input('Digite um valor inteiro: '))
+y = int(input('Digite um segundo valor inteiro: '))
+if (x > y):
+  print('O primeiro valor é maior que o segundo!')
+
+
+A IMPORTANCIA DA INDENTAÇAO
+
+sao aqueles espaços que tem entre o começa da linha, geralmente depois dos 2 pontos.
