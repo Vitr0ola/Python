@@ -1,0 +1,401 @@
+MÓDULO 1 - Entrada, saída, variáveis e seus tipos
+
+
+print= escrever, sempre colocar o print em letra minuscula, o print é uma funçao de Saída.
+
+print('Olá, Mundo!')
+
+
+print (2 + 3), uma operaçao aritmetica NAO precisa aspas ('), pelo motivo que ele vai simplesmente escrever em vez de fazer a operaçao em si.
+
+
+
+
+print ('2' + '3'), neste caso vai ocorrer a junçao dos numeros em aspas ou seja 23
+
+
+print('O resultado da soma de 2 + 3 é:', 2 + 3) Aqui podemos misturar no mesmo print uma mensagem com uma operaçao aritmetica, neste caso é necessario utilizar o virgula como junçao.
+
+print('11', '05', '1997', sep='/') O sep significa que voce pode mudar o separador.
+
+
+
+OPERAÇOES ARITMETICAS MATEMATICA
+
++ Adiçao
+- Subtraçao
+* Multiplicaçao
+/ Divisao (com casa decimais)
+// Divisao (somente parte inteira)
+% Módulo/Resto da divisao
+** Exponenciaçao/potenciaçao
+
+print(4 -  5) -1
+print(4 *  5) 20
+print(4 /  5) 0.8
+print(4 // 5) 0
+print(4 %  5) 4
+print(4 ** 5) 1024
+
+
+print((10+3)*2)= 26  Os parenteses de dentro sao feitos antes da multiplicaçao, sempre temos que seguir as logicas matematicas
+
+
+
+print(10*(5+7//4) = 67.5  com as casas decimais
+
+
+print(10*(5+7//4) = 60   apenas a parte inteira
+
+
+
+Exercicios de Fixaçao
+
+
+A)2+3×3
+B)4²÷3
+C)(9²+2)×6−1
+
+ 
+A) print(2+3*3)
+
+B) print(4**2/3)
+
+C) print((9**2+2)*6-1)
+
+
+
+
+COMENTARIOS NO CÓDIGO PYTHON
+
+
+# serve para fazer um comentario de uma unica linha, tudo apos o # na mesma linha será considerado um comentario e nao será executado.
+
+
+''' Comentarios de multiplas linhas (Docstrings) sao geralmente usados paa documentar funçoes, classes e modulos, mas tambem podem ser usados como comentartios de multiplas linhas.
+
+
+
+
+
+
+VARIAVEIS, DADOS E SEUS TIPOS
+
+
+Variaveis sao nomes que damos para identificaçao, sempre que voce invocar o nome de uma respectiva variavel, seu bloco de memoria sera automaticamente carregado da RAM, e manipulado pela CPU.
+
+
+Tipos Primitivos de Dados
+
+-Numerico, é um tipo que serve para representar qualquer número, seja valores inteiros, ou valores com casas decimais
+
+-Caractere, é um tipo que serve para representar letras, caracteres especiais, acentuaçoes, e até mesmo podem ser utilizados para números
+
+-Literal/Booleano, é um tipo que serve para representar somente dois estados logicos: verdadeiro ou falso (1 ou 0)
+
+
+nome = 'Vitor'  variavel nome
+idade = 19      variavel idade
+  
+print(nome)
+print(idade)
+
+
+print('Nome: ', nome, '. Idade: ', idade)
+
+Nome: Vitor . idade: 19
+
+
+
+
+REGRAS PARA NOMES DE VARIÁVEIS
+
+
+Nome	Permitido?	Explicação
+idade	Sim	Nome formado somente por letras/caracteres não especiais.
+v3	Sim	Números são permitidos desde que não no início da palavra.
+3v	Não	Não podemos iniciar uma variável com um número.
+Maior_nota	Sim	Podemos usar caracteres maiúsculas e o sublinha sem problemas.
+Maior nota	Não	O uso de espaços não é permitido em nomes de variáveis.
+_maior_	Não	Podemos usar a sublinha em qualquer parte da variável, inclusive no início.
+#maior	Não	Caracteres especiais não são permitidos em nenhuma parte do nome da variável.
+adicao	Sim	Nome formado somente por letras/caracteres não especiais.
+Adição	Parcialmente	Somente o Python 3 permite caracteres com acentuação.
+Recomenda-se fortemente que evite esta prática, pois quase nenhuma linguagem admite isso.
+
+
+
+Variaveis Logicas
+
+==	Igualdade
+>	Maior que
+<	Menor que
+>=	Maior ou igual que
+<=	Menor ou igual que
+!=	Diferente
+
+
+a = 1 
+b = 5
+
+resposta = a == b
+
+print(resposta)
+
+resposta = a != b
+print(resposta)
+
+
+Exercicio 
+
+
+nota = 8.0
+aprovado = nota >= 7.0
+print(aprovado)
+
+
+
+Strings
+
+Tabela ASCII 256 simbolos apenas 8bits
+
+
+UNICODE 4bilhoes de simbolos (32 bits)
+
+O indice é um numero que indica a posiçao do caractere na cadeia. O primeiro indice é sempre o valor zero.
+
+print(frase[0]) = O
+
+
+CONCATENAÇAO DE STRINGS
+
+s1 = 'Vitor'
+s1 = s1 + ' Nascimento'
+print(s1)
+
+
+
+
+s1 = 'A' + '-' *10 + 'B'
+print(s1)
+
+A----------B
+
+
+Exercicio
+
+\n para quebra de linha
+\t para uma tabulaçao
+
+s2 = 'Linguagens de programaçao \n' +  '\t Python ' + 5* '-' + ' C ' + 5* '-' + ' Java ' + 5* '-' + ' PHP '
+print (s2)
+
+
+
+Composiçao com F-STRINGS
+
+Para criarmos um f-string, basta que coloquemos a letra f antes ddas aspas de uma string. Em seguida, podemos fazer o print disto
+
+Utiliza as chaves com a variavel dentro
+
+idade = 80
+s1 = f'Você tem {idade} anos.'
+print(s1)
+
+
+carro = ' Palio '
+ano = 2008
+s4 = f 'Meu carro é um {carro}, e o ano dele é {2008}'
+
+
+Fatiamentos de Strings
+
+temos que contar os indices e desta forma sempre adicionar um pra cima ou para baixo, lembrando que começamos a contar do 0, colamos eles em [] e os indices dentro, desta forma fatiando.
+
+s5 = 'Raphael Veiga'
+print(s5 [8:13])
+
+
+
+
+Tamanhos de Strings
+
+Usamos o len para saber o tamanho das nossas variaveis
+
+s6 = 'Vitor do Nascimento Santos'
+tamanho = len(s6)
+print (tamanho)
+
+nome = 'Roger Careca'
+teste = len(nome) <=15
+print(teste) 
+
+
+
+
+FUNÇAO DE ENTRADA (Input)
+
+A função input irá, portanto, colocar na tela a mensagem de texto que você escolheu, e em seguida abrirá um campo para digitação. Neste campo, o que for digitado será armazenado em uma variável definida na atribuição.
+
+
+idade = input('Qual sua idade?')
+print(idade)
+
+
+nome = input('Qual seu nome? ')
+print(f'Olá {nome}, seja bem-vindo!')
+
+
+Convertendo dados de entrada
+Aqui utilizamos o float para numeros e int para numero inteiros
+
+num1 = float(input('Digite um número '))
+num2 = float(input('Digite um segundo número '))
+print(num1 + num2)
+
+
+
+
+
+O FLUXO DE EXECUÇAO DO PROGRAMA
+
+
+Nosso programa inicia sua execução de cima para baixo, ou seja, na linha 1, e vai descendo, uma a uma, até executar a linha 10, onde imprime o valor de ‘z’ na tela. A cada linha executada, as variáveis ‘x’, ‘y’ e ‘z’ vão alterando seus valores neste exemplo.
+
+x = 1
+y = 1
+
+z = x + y #z = 1 + 1 = 2
+x = x + 2 #x = 1 + 2 = 3
+y = y - 1 #y = 1 - 1 = 0
+
+z = x + y #z = 3 + 0 = 3
+x = y + 1 #x = 0 + 1 = 1
+y = x - 1 #y = 1 - 1 = 0
+z = x + y #z = 1 + 0 = 1
+print(z) #z = 1
+
+
+
+Exercicios 
+
+x = int(input('Digite um numero inteiro:'))
+y = int(input('Digite um segundo numero inteiro:'))
+
+res = f'o resultado da soma de {x} com {y} sera {x + y}.'
+print(res)
+
+
+
+EXERCÍCIO 2
+
+1) Desenvolva um algoritmo que solicite ao usuário uma quantidade de dias, de horas, de minutos e de segundos. Calcule o total de segundos resultante e imprima na tela para o usuário.
+
+d = int(input('Quantos dias?'))
+h = int(input('Quantos horas?'))
+m = int(input('Quantos minutos?'))
+s = int(input('Quantos segundos?'))
+
+# 1 dia = 24h / 1 hora é = 60min / 1 min = é 60 s
+
+total = s + (m * 60) + (h * 60 * 60) + (d * 24 * 60 * 60)
+
+res = f'o total de segundos calculado é de {total}.'
+
+print(res)
+
+
+
+
+EXERCÍCIO 3
+
+Desenvolva um algoritmo que solicite ao usuário o preço de um produto e um percentual de desconto a ser aplicado a ele. Calcule e exiba o valor do desconto e o preço final do produto.
+
+
+preco =  float(input('Digite o preço do produto:'))
+
+p = float(input('Digite o percentual de desconto (0-100%):'))
+
+desconto = preco * (p/100)
+final = preco - desconto
+
+print(f'O preço do produto é {preco}. Desconto aplicado de {p}%')
+print(f'Valor de desconto calculado: {desconto}.')
+print(f'Valor final do produto: {final}')
+
+
+### EXERCÍCIO 4
+
+Desenvolva um algoritmo que converta uma temperatura em Celsius (C) para Fahrenheit (F). A equação de conversão é:  
+
+<center>$\frac{9 \times C}{5} + 32$</center>
+
+C = float(input('Digite um temperatura em Celsius (c):'))
+
+F = (9 * C) / 5 + 32
+
+print(f'Celsius: {C}. Fahrenheit: {F}')
+
+
+
+### EXERCÍCIO 5
+
+Desenvolva um algoritmo que seja capaz de calcular a soma e a subtração entre 2 valores com vírgula.Crie duas variáveis de teste. Uma que testa se a soma é maior do que 10. Outra que testa se a subtração é menor do que 0. Imprima tudo na tela.
+
+
+
+x = float(input('Digite um valor:'))
+y = float (input('Digite um segundo valor:'))
+
+soma = x + y
+sub = x - y
+
+test = soma > 10
+testb =  sub < 0 
+
+print(f'Soma:{soma}. Subtraçao:{sub}')
+print(f'A soma é maior que 10? {test}')
+print(f'A subtraçao é menor que 0? {testb}')
+
+
+
+
+
+Exercicio extra
+
+### DESAFIO
+
+Desenvolva um algoritmo para calcular o tempo de redução de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que o fumante perde 10 minutos de vida a cada cigarro, e calcule quantos dias de vida um fumante perderá, Exiba o total em dias.
+
+
+
+
+
+a = int(input('Digite um numero: '))
+b = int(input('Digite um outro numero'))
+
+res = (f'O resultado da soma de {a} mais {b} é de: {a + b} ')
+
+15
+
+print(res)
+
+
+
+carro = str(input('Qual o seu carro?' ))
+ano = int(input('Qual o ano do seu carro? '))
+
+s4 = f'O meu carro é um {carro}, e o ano dele é {ano}.'
+print(s4)
+
+
+
+# Escreva um programa que leia um valor em metros e o exiba convertido em milímetros.
+
+
+
+metros = float(input('Me informe a quantidade de metros: '))
+
+milimetro = metros * 1000
+
+print(f'{metros} equivalem a {milimetro}.')
