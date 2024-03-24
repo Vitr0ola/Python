@@ -78,3 +78,20 @@ else:
 print('mes incorreto !!!')
 
 
+#colocar o conteudo de uma lista em ordem alfabetica
+frutas.sort() #classificar em ordem alfabetica
+print(frutas)
+print(frutas[1])
+
+
+frutas.append('Amora') # acrescentar mais algum item, apenas um de cada vez
+frutas.sort()
+print(frutas)
+
+
+for fruta in frutas: #for (para) comando de loop, tudo que tiver em frutas ele irá monstrar utilizando FRUTA.
+  print('As frutas sao: ',fruta)
+
+
+
+
