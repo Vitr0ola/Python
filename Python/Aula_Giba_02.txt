@@ -1,0 +1,24 @@
+#Localizar onde está salva na memoria, utilizando o id/ e saber o tipo de variavel que estamos lidando usando o comando type.
+
+nome = str('gilberto')
+print(type(nome))
+
+ano = int(2024)
+print(id(ano))
+
+
+#Utilizaçao de alguns metodos.
+#upper= deixar em letra maiuscula.
+
+print(nome.upper())
+
+nome = nome.upper()
+print(id(nome))
+
+#Metodo replace = mudar os caracteres escolhidos.
+print(nome.replace('G','X').replace('E','Y').lower())
+
+#Metodo count = contar caracteres
+produto = str('banana')
+print(produto.count('a'))
+
