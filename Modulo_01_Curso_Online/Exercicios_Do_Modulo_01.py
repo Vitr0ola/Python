@@ -98,3 +98,17 @@ tempo_perdido_dias = tempo_perdido_min / 60 / 24
 print(f'Voce fuma por {dias_fumando}. Um total de {total_cigarros} cigarros')
 print(f'O seu total de tempo de vida perdido, considerando que cada cigarro consome {tempo_1cigarro} minutos da sua vida é de {tempo_perdido_dias}')
 
+
+
+
+#Exercicio 7
+
+# Escreva um programa que leia um valor em metros e o exiba convertido em milímetros.
+
+metros = float(input('Me informe a quantidade de metros: '))
+
+milimetro = metros * 1000
+
+print(f'{metros} equivalem a {milimetro}.')
+
+
