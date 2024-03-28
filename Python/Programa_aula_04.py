@@ -1,5 +1,7 @@
 
-# https://viacep.com.br/ws/09180-330/json/
+# Utilizando o site viacep.com.br criei um codigo que quando voce informa seu cep ele te entrega valores(dados) de acordo.
+#API REST 
+#Dicionario
 
 import requests
 import warnings
