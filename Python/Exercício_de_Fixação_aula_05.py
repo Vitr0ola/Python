@@ -47,3 +47,24 @@ print(tv_cozinha.marca)
  #criando um novo objeto
 Tv_quarto2 = TV() #objeto
 print(Tv_quarto2.canal)
+#--------------------------------------------------------------------------
+def calculadora(n1,n2,opcao):
+  if opcao == 1:
+    return n1 + n2
+  elif opcao == 2:
+    return n1 - n2
+  elif opcao == 3:
+    return n1 * n2
+  elif opcao == 4:
+    return n1 // n2
+
+valor1 = float(input('Digite um valor'))
+valor2 = float(input('Digite um valor'))
+
+
+opc = int(input('Digite 1 para soma\nDigite 2 para subtrair\nDigite 3 para multiplicar\nDigite 4 para divisao:' ))
+
+print(calculadora(valor1,valor2,opc))
+
+
+
